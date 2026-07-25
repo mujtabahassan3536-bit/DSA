@@ -1,0 +1,23 @@
+Queue using Two Stacks
+
+Problem
+
+The goal is to implement a queue using only two stacks. Since a queue follows FIFO (First In, First Out) and a stack follows LIFO (Last In, First Out), the challenge is to maintain the correct order of elements.
+
+Approach
+
+I used the costly enqueue approach. Before inserting a new element, I move all elements from Stack 1 to Stack 2. Then I push the new element into Stack 1 and move all elements back from Stack 2 to Stack 1. This keeps the front of the queue at the top of Stack 1, so the pop operation becomes simple.
+
+Complexity
+
+Push (Enqueue): O(n)
+
+Pop (Dequeue): O(1)
+
+Front: O(1)
+
+Space Complexity: O(n)
+
+Learning
+
+This problem helped me understand that one data structure can be implemented using another. I also learned that there can be more than one valid solution for the same problem, with different time complexity trade-offs. More importantly, I understood the logic behind the implementation instead of just memorizing the code.
