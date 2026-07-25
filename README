@@ -1,0 +1,34 @@
+Maximum Sum Subarray of Size K
+
+Problem
+
+Given an array of integers and an integer `k`, find the maximum sum of any contiguous subarray of size `k`.
+
+Approach
+
+- Calculate the sum of the first window of size `k`.
+- Store it as the current maximum sum.
+- Slide the window one element at a time.
+- For every slide:
+  - Remove the element leaving the window.
+  - Add the new element entering the window.
+  - Update the maximum sum if the current sum is greater.
+
+Time Complexity
+
+O(n)
+
+Space Complexity
+
+O(1)
+
+Learning
+
+This problem introduced me to the Fixed Size Sliding Window pattern.
+
+Instead of calculating the sum of every window from scratch, I learned that I can reuse the previous window's sum by subtracting the leaving element and adding the entering element.
+
+Formula:
+
+Current Sum = Previous Sum - Leaving Element + Entering Element
+
