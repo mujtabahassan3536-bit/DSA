@@ -1,0 +1,44 @@
+Graph - Adjacency List
+
+This project demonstrates how to represent an undirected graph using an adjacency list in C++.
+
+Problem
+
+Store the connections between vertices efficiently and display all neighboring vertices for each node.
+
+Approach
+
+* Created a `Graph` class.
+* Used an array of linked lists (`list<int>`) to store the neighbors of each vertex.
+* Added edges in both directions to represent an undirected graph.
+* Printed the adjacency list by traversing each linked list.
+
+Time Complexity
+
+* Graph Creation: O(V)
+* Add Edge: O(1)
+* Print Adjacency List: O(V + E)
+
+Space Complexity
+
+O(V + E)
+
+What I Learned
+
+* What a graph is and where it is used.
+* Difference between vertices and edges.
+* Why adjacency lists are preferred for sparse graphs.
+* How to create an undirected graph using linked lists.
+* How `list<int>*` works as an array of linked lists.
+* How range-based for loops traverse the neighbors of a vertex.
+
+Sample Output
+
+text
+0 : 1 2
+1 : 0 3 4
+2 : 0 3
+3 : 1 2
+4 : 1
+
+
