@@ -1,0 +1,45 @@
+Heap & Priority Queue
+
+This folder contains my implementation and learning notes for Heaps and Priority Queues in C++.
+
+What I learned:
+
+* Max Heap and Min Heap
+* Priority Queue
+* Heap property
+* Heapify Up
+* Heapify Down
+* Heap implementation using an array/vector
+* Parent, left child, and right child index formulas
+* Insertion and removal in a Heap
+
+For a Max Heap:
+
+Parent index:
+(i - 1) / 2
+
+Left child:
+2 * i + 1
+
+Right child:
+2 * i + 2
+
+Operations:
+
+*push() → insert at the end and Heapify Up
+*pop() → remove the root, move the last element to the root, and Heapify Down
+*top() → access the highest-priority element
+
+Time Complexity:
+
+* `push()` → O(log n)
+* `pop()` → O(log n)
+* `top()` → O(1)
+
+Space Complexity:
+
+* O(n)
+
+Main learning:
+
+A Heap is not a completely sorted structure. It only maintains the Heap property, which allows us to efficiently access and remove the highest or lowest priority element.
